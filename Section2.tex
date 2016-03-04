@@ -51,4 +51,22 @@ var[x]	&= \mathbb{E}[x^2]-\mu^2 \\
 H[x]	&= -p(x=-1|\mu)\ln p(x=-1|\mu) - p(x=1|\mu)\ln p(x=1|\mu) \\
 		&= -\frac{1+\mu}{2} \ln \frac{1+\mu}{2} - \frac{1-\mu}{2} \ln \frac{1-\mu}{2}
 \end{align*}
+
+\subsection*{演習2.3}
+\begin{align*}
+{}_N C_m+{}_N C_{m-1} &= \frac{N \cdot (N-1) \cdots (N-m+1)}{m \codt (m-1) \cdots 1} + \frac{N \cdot (N-1) \cdots (N-m+2)}{m-1 \cdot (m-2) \cdots 1} \\
+                      &=\frac{\{N \cdot (N-1) \cdots (N-m+2)\}\{(N-m+1)+m\}}{m \cdot (m-1) \cdots 1} \\
+                      &=\frac{N+1 \cdot (N) \cdots (N-m+2)}{m \cdot (m-1) \cdots 1} \\
+                      &={}_{N+1} C_m
+\end{align*}
+N=1のとき、
+\begin{align*}
+\sum_{m=0}^N{\left(\begin{array}{ll} 1 \\ m \end{array} \right)x^m} &= \left(\begin{array}{ll} 1 \\ 0 \end{array} \right)x^0+\left(\begin{array}{ll} 1 \\ 1 \end{array} \right)x^1 \\
+        &= (1+x)^1
+\end{align*}
+
+\begin{align*}
+(1+x)^k = \sum_{m=0}^k{\left(\begin{array}{ll} k \\ m \end{array} \right)x^m}
+\end{align*}
+
 \end{document}
