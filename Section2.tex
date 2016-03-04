@@ -64,9 +64,12 @@ N=1のとき、
 \sum_{m=0}^N{\left(\begin{array}{ll} 1 \\ m \end{array} \right)x^m} &= \left(\begin{array}{ll} 1 \\ 0 \end{array} \right)x^0+\left(\begin{array}{ll} 1 \\ 1 \end{array} \right)x^1 \\
         &= (1+x)^1
 \end{align*}
-
+N=kのとき、
+\[(1+x)^k = \sum_{m=0}^k{\left(\begin{array}{ll} k \\ m \end{array} \right)x^m}\]
+上式が成り立つと仮定すると、
 \begin{align*}
-(1+x)^k = \sum_{m=0}^k{\left(\begin{array}{ll} k \\ m \end{array} \right)x^m}
+(1+x)^{k+1} &= (1+x)\sum_{m=0}^k{\left(\begin{array}{ll} k \\ m \end{array} \right)x^m}
 \end{align*}
+
 
 \end{document}
