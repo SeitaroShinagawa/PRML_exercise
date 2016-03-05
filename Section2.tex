@@ -68,7 +68,12 @@ N=kのとき、
 \[(1+x)^k = \sum_{m=0}^k{\left(\begin{array}{ll} k \\ m \end{array} \right)x^m}\]
 上式が成り立つと仮定すると、
 \begin{align*}
-(1+x)^{k+1} &= (1+x)\sum_{m=0}^k{\left(\begin{array}{ll} k \\ m \end{array} \right)x^m}
+(1+x)^{k+1} &= (1+x)\sum_{m=0}^k{\left(\begin{array}{ll} k \\ m \end{array} \right)x^m} \\
+            &= \sum_{m=0}^k{\Biggl\{\left(\begin{array}{ll} k \\ m \end{array} \right)x^m+\left(\begin{array}{ll} k \\ m \end{array} \right)x^{m+1}\Biggr\}} \\
+            = \left(\begin{array}{ll} k \\ 0 \end{array} \right)x^0 &+ \left(\begin{array}{ll} k \\ 1 \end{array} \right)x^1 + \cdots + \left(\begin{array}{ll} k \\ k \end{array} \right)x^k \\
+            &+ \left(\begin{array}{ll} k \\ 0 \end{array} \right)x^1 + \cdots + \left(\begin{array}{ll} k \\ k-1 \end{array} \right)x^k + \left(\begin{array}{ll} k \\ k \end{array} \right)x^{k+1} \\
+            = \left(\begin{array}{ll} k+1 \\ 0 \end{array} \right)x^0 &+ \left(\begin{array}{ll} k+1 \\ 1 \end{array} \right)x^1 + \cdots + \left(\begin{array}{ll} k+1 \\ k \end{array} \right)x^k + \left(\begin{array}{ll} k+1 \\ k+1 \end{array} \right)x^{k+1} \\
+            &= \sum_{m=0}^{k+1}{\left(\begin{array}{ll} k+1 \\ m \end{array} \right)x^m}
 \end{align*}
 
 
