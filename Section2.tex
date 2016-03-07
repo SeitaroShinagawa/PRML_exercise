@@ -75,6 +75,14 @@ N=kのとき、
             = \left(\begin{array}{ll} k+1 \\ 0 \end{array} \right)x^0 &+ \left(\begin{array}{ll} k+1 \\ 1 \end{array} \right)x^1 + \cdots + \left(\begin{array}{ll} k+1 \\ k \end{array} \right)x^k + \left(\begin{array}{ll} k+1 \\ k+1 \end{array} \right)x^{k+1} \\
             &= \sum_{m=0}^{k+1}{\left(\begin{array}{ll} k+1 \\ m \end{array} \right)x^m}
 \end{align*}
+よって、N=k+1のときも成り立つ。よって数学的帰納法により(2.263)式が証明された。\\
+(2.264)式の左辺について、
+\begin{align*}
+\sum_{m=0}^N{\left(\begin{array}{ll} N \\ m \end{array} \right)\mu^m (1-\mu)^{N-m}} &= (1-\mu)^N \sum_{m=0}^N{\left(\begin{array}{ll} N \\ m \end{array} \right)(\frac{\mu}{1-\mu}})^N \\
+                　&= (1-\mu)^N (1+\frac{\mu}{1-\mu})^N \\
+                　&= 1
+\end{align*}
+
 
 
 \end{document}
